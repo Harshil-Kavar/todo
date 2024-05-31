@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="todo">
+        <div class="todo-header mb-3">
+          <section id="todo-form">
+            <form class="mb-1" id="mainForm">
+              <i class="fa-solid fa-file-circle-plus"></i>
+              <input
+                type="text"
+                id="mainInput"
+                placeholder="Enter Your Text Here...."
+              />
+              <button type="submit" id="submitBTN" class="d-none">
+                <i class="fa-solid fa-circle-plus"></i>
+              </button>
+            </form>
+            <div class="d-flex justify-content-between">
+              <div class="" id="completeAllTododiv">
+                <i class="fa-solid fa-check-double"></i
+                ><span class="mx-1">Complete all tasks</span>
+              </div>
+              <div class="" id="clrearCompletedTodo"><span>Clear completed</span></div>
+            </div>
+            <hr />
+          </section>
+        </div>
+        <div class="todo-container mb-3">
+          <section id="todo-list"></section>
+        </div>
+        <div class="todo-footer">
+          <section id="todo-filters">
+            <div class="d-flex justify-content-between">
+              <div>
+                <p>
+                  <span id="todo-left">0</span>
+                  todo left
+                </p>
+              </div>
+              <div>
+                <button id="filterAllBtn">All</button>
+                <button id="filterUncompletedBtn">Uncompleted</button>
+                <button id="filterCompletedBtn">completed</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

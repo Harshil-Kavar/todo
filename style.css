@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Common css*/
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: inline-block !important;
+}
+.mx-1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+.mb-3 {
+  margin-bottom: 30px;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.w-100 {
+  width: 100%;
+}
+.w-80 {
+  width: 80%;
+}
+/* App css*/
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo {
+  width: 50%;
+  min-width: 300px;
+  max-width: 600px;
+  min-height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3%;
+}
+
+i {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+span {
+  font-size: 14px;
+  color: gray;
+}
+
+form {
+  width: 100%;
+  position: relative;
+}
+
+#mainInput {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px 35px;
+  border-radius: 7px;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+}
+.show-hide-submit {
+  display: none;
+}
+#mainInput:focus-within + .show-hide-submit {
+  display: inline-block;
+}
+
+form i.fa-file-circle-plus {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+}
+
+form button {
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background: transparent;
+  border: none;
+}
+
+i.fa-check-double {
+  color: gray;
+}
+
+.list-item {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 5px;
+}
+.show-hide-icon {
+  display: none;
+}
+.list-item:hover .show-hide-icon {
+  display: block;
+}
+
+.list-item input {
+  width: 20px;
+}
+
+.todo-title {
+  margin: 0 0 0 20px;
+  font-size: larger;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.fa-circle-xmark {
+  font-size: 22px;
+}
+
+.todo-footer button {
+  background: transparent;
+  padding: 2px;
+  border: none;
+  cursor: pointer;
+  margin: 0 4px;
+}
+.todo-footer button:hover {
+  color: rgb(122, 208, 236);
+}
+#todo-left {
+  font-size: 18px;
+  font-weight: 700;
+}
